@@ -10,12 +10,12 @@ body{
 
 @font-face {
     font-family: 'LucasArt SCUMM - Solid'; /* Name your font family */
-    src: url('/assets/fonts/Shaston320.ttf'); /* Locate the .ttf file within your directory*/
+    src: url('./assets/fonts/Shaston320.ttf'); /* Locate the .ttf file within your directory*/
   }
 
 @font-face {
     font-family: 'Pixel Font'; /* -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
-    src: url('/assets/fonts/PrintChar21.ttf'); /* Locate the .ttf file within your directory*/
+    src: url('./assets/fonts/PrintChar21.ttf'); /* Locate the .ttf file within your directory*/
   }
 
 

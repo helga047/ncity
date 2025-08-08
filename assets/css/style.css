@@ -12,7 +12,7 @@ body {
 
   @font-face {
     font-family: 'LucasArt SCUMM - Solid';
-    src: url('/assets/fonts/Shaston320.ttf') format('truetype');
+    src: url('https://github.com/helga047/ncity/tree/main/assets/fonts/Shaston320.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }

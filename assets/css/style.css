@@ -10,7 +10,8 @@ body{
 
 @font-face {
     font-family: 'LucasArt SCUMM - Solid'; /* Name your font family */
-    src: url('./assets/fonts/Shaston320.ttf'); /* Locate the .ttf file within your directory*/
+    src: url('./fonts/Shaston320.ttf'); /* Locate the .ttf file within your directory*/
+    
   }
 
 @font-face {

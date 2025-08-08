@@ -38,6 +38,8 @@ p{
     width: 70%;
     height: auto;
     background-color:   black; /*Change here to see highlighted border*/
-    display: inline-block; /*how it should be display*/
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

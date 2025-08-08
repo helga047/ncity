@@ -1,45 +1,49 @@
-*{
-    box-sizing: border-box; 
-   }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-body{
+body {
     background-color: blue;
     color: yellow;
-    font-family: 'LucasArt SCUMM - Solid'; /* Name your font family */
-}
-
-@font-face {
-    font-family: 'LucasArt SCUMM - Solid'; /* Name your font family */
-    src: url('./fonts/Shaston320.ttf'); /* Locate the .ttf file within your directory*/
-    
+    font-family: 'LucasArt SCUMM - Solid', sans-serif;
   }
 
-@font-face {
-    font-family: 'Pixel Font'; /* -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
-    src: url('./assets/fonts/PrintChar21.ttf'); /* Locate the .ttf file within your directory*/
+  @font-face {
+    font-family: 'LucasArt SCUMM - Solid';
+    src: url('/assets/fonts/Shaston320.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Pixel Font';
+    src: url('/assets/fonts/PrintChar21.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
 
 
-h1{
-    font-family: 'LucasArt SCUMM - Solid'; /* Name your font family */
+  h1 {
+    font-family: 'LucasArt SCUMM - Solid';
     letter-spacing: -1px;
-}
-
-p{
-    font-family: 'Pixel Font'; 
+  }
+  
+  p {
+    font-family: 'Pixel Font';
     letter-spacing: -1px;
-}
-
-.main-class{
-    margin:0;
+  }
+  
+  .main-class {
+    margin: 0;
     text-align: center;
-}
-
-.main-container{
-    width: 70%;
-    height: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-}
+  }

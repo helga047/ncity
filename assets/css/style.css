@@ -39,7 +39,7 @@ p{
     height: auto;
     background-color:   black; /*Change here to see highlighted border*/
     text-align: center;
-    display: flex;
+    display: inline block;
     justify-content: center;
     align-items: center;
 }

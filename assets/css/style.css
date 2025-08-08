@@ -39,4 +39,5 @@ p{
     height: auto;
     background-color:   black; /*Change here to see highlighted border*/
     display: inline-block; /*how it should be display*/
+    text-align: center;
 }

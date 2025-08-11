@@ -19,7 +19,7 @@ body {
   
   @font-face {
     font-family: 'Pixel Font';
-    src: url('/assets/fonts/PrintChar21.ttf') format('truetype');
+    src: url('https://helga047.github.io/ncity/assets/fonts/PrintChar21.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }

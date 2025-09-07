@@ -60,14 +60,14 @@ body {
 
 @font-face {
   font-family: 'LucasArt SCUMM - Solid';
-  src: url('/assets/fonts/Shaston320.ttf') format('truetype');
+  src: url('https://github.com/helga047/ncity/blob/main/assets/fonts/lucasarts-scumm-solid.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
   
 @font-face {
   font-family: 'Pixel Font';
-  src: url('/assets/fonts/PrintChar21.ttf') format('truetype');
+  src: url('https://github.com/helga047/ncity/blob/main/assets/fonts/PrintChar21.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

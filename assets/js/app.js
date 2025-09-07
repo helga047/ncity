@@ -12,7 +12,7 @@ async function loadComponent(id, url) {
   }
   
 document.addEventListener("DOMContentLoaded", async (event) => {
-    loadComponent("header", "./components/header.html");
-    loadComponent("footer", "/components/footer.html");
+    loadComponent("header", "https://helga047.github.io/ncity/components/header.html");
+    loadComponent("footer", "https://helga047.github.io/ncity/components/footer.html");
     console.log("DOM fully loaded and components loaded.");
   });

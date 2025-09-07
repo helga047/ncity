@@ -18,6 +18,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 3rem;
 }
 
 .main-container {
@@ -111,14 +112,14 @@ a{
 /* Header */
 
 .header{
-  color: #D5C67A;
+  color: #f4d35e;
   text-align: center;
 }
 
 /* Footer */
 
 .footer{
-  color: #D5C67A;
+  color: #f4d35e;
 }
 
 /* Images */

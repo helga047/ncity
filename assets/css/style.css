@@ -1,49 +1,130 @@
 *,
 *::before,
 *::after {
+  margin: 0;
   box-sizing: border-box;
 }
 
+/* DESKTOP VERSION */
+
 body {
-    background-color: blue;
-    color: yellow;
-    font-family: 'LucasArt SCUMM - Solid', sans-serif;
-  }
+  background-color: darkblue;
+  color: #f4d35e;
+  font-family: 'LucasArt SCUMM - Solid', sans-serif;
+}
 
-  @font-face {
-    font-family: 'LucasArt SCUMM - Solid';
-    src: url('https://helga047.github.io/ncity/assets/fonts/Shaston320.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Pixel Font';
-    src: url('https://helga047.github.io/ncity/assets/fonts/PrintChar21.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+.main-class {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  h1 {
-    font-family: 'LucasArt SCUMM - Solid';
-    letter-spacing: -1px;
-  }
-  
-  p {
-    font-family: 'Pixel Font';
-    letter-spacing: -1px;
-  }
-  
-  .main-class {
-    margin: 0;
-    text-align: center;
-    display: flex;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: realive-size;
+  text-align: center;
+}
+
+.flex-item-left {
+  align-content: center;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  align-content: center;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* MOBILE VERSION */
+
+@media (max-width: 800px) {
+  .flex-container {
     flex-direction: column;
   }
+}
+
+/* TYPOGRAPHY */
+
+/*Font*/
+
+@font-face {
+  font-family: 'LucasArt SCUMM - Solid';
+  src: url('/assets/fonts/Shaston320.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
   
-  .main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@font-face {
+  font-family: 'Pixel Font';
+  src: url('/assets/fonts/PrintChar21.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* p, h1, etc. styling */
+
+p,li {
+  font-family: 'Pixel Font';
+  letter-spacing: -1px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: 'LucasArt SCUMM - Solid';
+  letter-spacing: -1px;
+  font-size: 25px;
+}
+
+/* pre{
+  line-height: 1.6;
+  font-family: 'Pixel Font';
+  word-wrap: break-word;
+}
+ */ 
+
+/* Links */
+
+a.banner-link {
+  display: inline-block;
+  width: 75%;
   }
+  
+a.banner-link img {
+  width: 100%;
+}
+  
+a{
+  color:#D5C67A;
+}
+
+/* Header */
+
+.header{
+  color: #D5C67A;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer{
+  color: #D5C67A;
+}
+
+/* Images */
+.pixel-perfect {
+  image-rendering: pixelated;     /* Most modern browsers */
+  image-rendering: crisp-edges;   /* Fallback for Safari */
+  height: auto;   /* maintain aspect ratio */
+}
+

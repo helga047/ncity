@@ -4,29 +4,77 @@
 <head>
  <script src="https://helga047.github.io/ncity/assets/js/app.js" defer></script>     
  <link rel="stylesheet" href="https://helga047.github.io/ncity/assets/css/style.css">
-   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+ <title data-i18n="home.title"></title>
 </head>
 
 
 
 <body>
-  <div id="header"></div>
-<main>
-<div class="flex-container">  
+ <div id="header"></div>
+  <main class="main-class">
+    <br></br>
+    <h1 data-i18n="home.title"></h1>
+    
+      <br></br>
+      <p>
+      <span id="city"></span> <strong style="text-align:center;" data-i18n="home.title2"></strong>
+    </p>
+    <br></br>
+   <p>
+      <span data-i18n="home.paragraphs.0"></span> <strong><a href="javascript:void(0);" id="toggleBtn">symbols/emojis</a></strong> <span id="smiley"></span>
+  </p>
+<div class="flex-container"> 
+
 <div class="flex-item-left">
 
 
-<p>🌆 Welcome to the NCity Nostalgia Project! 🌆</p>
-<p>This website is:</p>
-<li>🕹️ Retro – pixel vibes, neon glow, and CRT screen energy.</li>
-<li>🎶 Nostalgic – the mixtape of the internet, packed with 90s feels.</li>
-<li>📱 Mobile-friendly – plays smooth on any device, just like a tamagochi.</li>
-<li>🎉 Fun! :) – secret levels, easter eggs, and plenty of “GAME ON” moments :)</li>
+<p data-i18n="home.paragraphs.1"></p>
+<li><span id="game"></span> <span data-i18n="home.paragraphs.2"></span></li>
+<li><span id="music"></span> <span data-i18n="home.paragraphs.3"></span></span></li>
+<li><span id="phone"></span> <span data-i18n="home.paragraphs.4"></span></span></li>
+<li><span id="party"></span> <span data-i18n="home.paragraphs.5"></span></span></li>
 </div>
-<div class="flex-item-right"><img id="NCity" src="https://helga047.github.io/ncity/assets/images/NCity.bmp" alt="Banner" class="pixel-perfect" style="width:100%"></div> 
+<div class="flex-item-right"><img  src="https://helga047.github.io/ncity/assets/images/NCity.bmp" alt="Banner" class="pixel-perfect" style="width:100%"></div> 
 </div>
 </main>
   <div id="footer"></div>
 </body>
+
+<script>
+ 
+  const arrays = [
+    ["♫", "▦", "☎", "♥♥♥","♦",":-)"],
+    ["🎶","🌆","📱","🕹️","🎉","😊"]
+  ];
+
+/* ///////////////////////////////// */
+
+let currentArrayIndex = 0; // tracks which array is active
+  const displays = [
+    { element: document.getElementById("music"), index: 0 },  // display index[0]
+    { element: document.getElementById("city"), index: 1 }, // display index[1]
+    { element: document.getElementById("phone"), index: 2 }, // display index[2]
+    { element: document.getElementById("game"), index: 3 }, // display index[3]
+    { element: document.getElementById("party"), index: 4 }, // display index[4]
+    { element: document.getElementById("smiley"), index: 5 } // display index[5]
+  ];
+
+  function renderDisplays() {
+    displays.forEach(d => {
+      d.element.textContent = arrays[currentArrayIndex][d.index] ?? "Index out of range";
+    });
+  }
+
+  // Initial display
+  renderDisplays();
+
+  // Toggle button to switch arrays
+  document.getElementById("toggleBtn").addEventListener("click", () => {
+    currentArrayIndex = (currentArrayIndex + 1) % arrays.length;
+    renderDisplays();
+  });
+
+      </script>
 
 </html>

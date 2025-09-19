@@ -8,17 +8,21 @@
 /* DESKTOP VERSION */
 
 body {
-  background-color: darkblue;
+  background-color:#000080;
   color: #f4d35e;
   font-family: 'LucasArt SCUMM - Solid', sans-serif;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+  min-height: 100vh; /* full height of viewport */
 }
 
 .main-class {
-  margin: 0;
+  flex: 1; /* expands to fill space */
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 20px;
 }
 
 .main-container {
@@ -26,6 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 
 .flex-container {
@@ -41,10 +46,20 @@ body {
   flex: 50%;
 }
 
+.flex-item-left-pic {
+  text-align: right;
+  padding: 10px;
+  flex: 50%;
+} 
+
 .flex-item-right {
   align-content: center;
   padding: 10px;
   flex: 50%;
+}
+
+section {
+  display: block;
 }
 
 /* MOBILE VERSION */
@@ -53,6 +68,20 @@ body {
   .flex-container {
     flex-direction: column;
   }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+  }
+
+  .flex-item-left-pic {
+    align-content: center;
+    text-align: center;
+  }
+
 }
 
 /* TYPOGRAPHY */
@@ -78,6 +107,7 @@ body {
 p,li {
   font-family: 'Pixel Font';
   letter-spacing: -1px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -106,7 +136,7 @@ a.banner-link img {
 }
   
 a{
-  color:#D5C67A;
+  color: #f4d35e;
 }
 
 /* Header */
@@ -114,12 +144,21 @@ a{
 .header{
   color: #f4d35e;
   text-align: center;
+  background-image: url("https://helga047.github.io/ncity/assets/images/gradient.png");
+  background-repeat: repeat-x;
+  height: 236px;
 }
+
 
 /* Footer */
 
 .footer{
   color: #f4d35e;
+  text-align: center;
+  background-image: url("https://helga047.github.io/ncity/assets/images/gradient-footer.png");
+  background-repeat: repeat-x;
+  height: 94px;
+  padding: 15px 10px;
 }
 
 /* Images */
@@ -128,4 +167,15 @@ a{
   image-rendering: crisp-edges;   /* Fallback for Safari */
   height: auto;   /* maintain aspect ratio */
 }
+
+li {
+  list-style-type:none;
+  text-align: left;
+  font-weight: normal;
+}
+
+ul-util{
+  text-align:left;
+}
+
 

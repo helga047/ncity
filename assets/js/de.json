@@ -1,0 +1,39 @@
+{
+  "about": {
+    "title": "Um",
+    "paragraphs": [
+      "Willkommen bei NCity – Nostalgieprojekt, Spin-off NC Clan.",
+      "Gestartet 2025 mit der Mission, sich an die gute alte Zeit zu erinnern."
+      ]
+    },
+    "historync": {
+      "title": "Geschichte des NC-Clans",
+      "date": "22. Januar 2008.",
+      "noclan1": "No Clan.",
+      "noclan2": "No Clan",
+      "friendship": "Freundschaft.",
+      "number": "Über 30 benutzerdefinierte Level.",
+      "members": "Über 70 Mitglieder.",
+      "paragraphs": [
+        "Ich habe mit Fabian gesprochen, und das ist sein Teil der Geschichte:",
+        "Der NC-Clan wurde gegründet am",
+        "Damals waren viele Clans kurzlebig, aber die Idee hinter diesem war anders: eine Freundesgruppe zu gründen, die nie verschwinden würde. Wir nannten sie einfach —",
+        "Was den Clan auszeichnete, war seine Gründung im Jahr",
+        "Dadurch gewann er schnell an Popularität und wurde für einige Mitglieder zu einer dauerhaften Heimat. Im Laufe der Jahre gründeten NC-Mitglieder mehr als",
+        "Anfangs bestand die Gruppe nur aus einer Handvoll Leuten. Doch bald erreichte die",
+        "einen beeindruckenden Meilenstein von"
+      ]
+    },
+    "home":{
+    "title": "Home - de",
+    "title2":"Willkommen bei NCity Nostalgia Project!",
+    "paragraphs": [
+      "Klicken Sie, um zwischen den Modi zu wechseln:",
+      "Diese Website ist:",
+      "Retro – pixel vibes, neon glow, und CRT screen energy.",
+      "Nostalgic – das Mixtape des Internets, vollgepackt mit 90er-Jahre-Feeling.",
+      "Mobilfreundlich – Läuft flüssig auf jedem Gerät, genau wie ein Tamagotchi.",
+      "Fun! :) - Geheime Level, Easter Eggs und jede Menge „GAME ON“-Momente."
+    ]
+  }
+}

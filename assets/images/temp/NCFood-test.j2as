@@ -1,0 +1,36 @@
+#pragma require "NCAnims.j2a"
+
+void onLevelLoad() {
+
+    jjAlert("NCAnims.j2a loaded and ready! Script replaces:");
+	jjAlert("- Soda Pop - > NC Soda v.1");
+	jjAlert("- Soft Drink - > NC Soda v.2");
+	jjAlert("- Icecream - > Big Icecream Dessert");
+	
+	//load anim:72 = 72 - 1 (pickups)
+	jjAnimSets[ANIM::CUSTOM[1]].load(71, "NCAnims.j2a");
+
+	// Soda Pop (Jazz)   - 164        - 72:76       - V1 NC Soda
+	//load anim 'pickups' from jazz2sd: 77-1 = 75
+    jjObjectPresets[OBJECT::PEPSI].determineCurAnim(ANIM::CUSTOM[1], 75);
+	
+    //Soft Drink (Red)  - 163        - 72:21       - V2 NC Soda
+	jjObjectPresets[OBJECT::COKE].determineCurAnim(ANIM::CUSTOM[1], 20);
+	
+	// Big Icecream Dessert
+	jjAnimSets[ANIM::CUSTOM[1]].load(25, "NCAnims.j2a");
+	jjObjectPresets[OBJECT::ICECREAM].determineCurAnim(ANIM::CUSTOM[1], 1);
+}
+
+
+void onFunction1(jjPLAYER@ play){
+   play.showText("@@@@@@Icecream - > Big Icecream Dessert");
+}
+
+void onFunction2(jjPLAYER@ play){
+   play.showText("@@@@@@Soft Drink - > NC Soda v.2");
+}
+
+void onFunction3(jjPLAYER@ play){
+   play.showText("@@@@@@- Soda Pop - > NC Soda v.1");
+}
